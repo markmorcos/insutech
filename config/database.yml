@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  port: 5432
+  username: rails
+  password: uopNQ4MsM0
+  database: insutech
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
